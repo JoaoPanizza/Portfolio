@@ -2,8 +2,6 @@ export const english = {
   'Estudante de tecnologia': 'Technology student',
   'Aberto a conexões e colaboração': 'Open to connections and collaboration',
   'Aprendizado e colaboração': 'Learning and collaboration',
-  'Preferência por remoto · aberto a presencial e híbrido':
-    'Remote preferred · open to on-site and hybrid',
   'Aprender, construir.': 'Learn, build.',
   'Evoluir em equipe.': 'Grow with a team.',
   'Sou João Panizza, estudante de tecnologia. Estou estudando para me tornar um desenvolvedor full-stack e comecei meu aprendizado pelo desenvolvimento web.':

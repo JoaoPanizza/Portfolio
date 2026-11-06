@@ -27,7 +27,6 @@ export default function AboutSection() {
           <ScrollReveal className="about-copy">
             <p>{t(profile.bio)}</p>
             <p>{t(profile.approach)}</p>
-            <p className="work-preference">{t(profile.workPreference)}</p>
             <a className="text-link" href={`mailto:${profile.email}`}>
               {t('Vamos trocar ideias', 'Let’s exchange ideas')}{' '}
               <ArrowUpRight size={17} />

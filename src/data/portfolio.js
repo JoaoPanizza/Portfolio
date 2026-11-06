@@ -7,7 +7,6 @@ export const profile = {
   availability: 'Aberto a conexões e colaboração',
   focus: 'Estudos em desenvolvimento full-stack',
   goal: 'Aprendizado e colaboração',
-  workPreference: 'Preferência por remoto · aberto a presencial e híbrido',
   resumeUrl: null,
   headline: ['Aprender, construir.', 'Evoluir em equipe.'],
   introduction:
