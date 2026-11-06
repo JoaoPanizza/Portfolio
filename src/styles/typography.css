@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2')
+    format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url('@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2')
+    format('woff2');
+}
+
+:root {
+  --font-sans: 'Inter Variable', Inter, system-ui, sans-serif;
+  --font-code: 'JetBrains Mono Variable', Consolas, monospace;
+  font-family: var(--font-sans);
+}
+h1,
+h2,
+h3,
+.brand {
+  font-family: var(--font-sans);
+}
+h1 {
+  font-weight: 500;
+  letter-spacing: -0.055em;
+}
+h2 {
+  font-weight: 450;
+  letter-spacing: -0.045em;
+}
+h3 {
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+.hero-description,
+.about-copy > p,
+.section-description,
+.project-info > p:not(.eyebrow),
+.journey-entry-content > p {
+  line-height: 1.85;
+}
+.developer-terminal,
+.editor-code,
+.developer-identity,
+.section-file,
+.tech-file,
+.tech-order,
+.journey-command,
+.journey-counter,
+.journey-period,
+.journey-commit,
+.developer-model figcaption,
+.portfolio-stats strong {
+  font-family: var(--font-code);
+}
+.hero h1.typing-heading {
+  font-size: clamp(38px, 4.3vw, 62px);
+  line-height: 1.15;
+}
+.hero h1.typing-heading .typing-line {
+  display: block;
+  position: relative;
+  color: #eeece6;
+}
+@keyframes caret-pulse {
+  50% {
+    opacity: 0;
+  }
+}
+.hero-profile-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 24px;
+}
+.hero-profile-links a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #c0c4bd;
+  font-size: 11px;
+  transition: color 0.2s;
+}
+.hero-profile-links a:hover {
+  color: #a8b88b;
+}
+.portfolio-stats {
+  gap: 65px;
+}
+.portfolio-stats strong {
+  font-size: 43px;
+  font-weight: 450;
+  font-variant-numeric: tabular-nums;
+}
+.portfolio-stats span {
+  font-size: 11px;
+}
+.project-study {
+  border-top: 1px solid #ffffff14;
+  margin-top: 20px;
+  padding-top: 13px;
+}
+.project-study summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #d5dccd;
+  font-size: 11px;
+  padding: 5px 0 10px;
+  gap: 12px;
+}
+.project-study summary::-webkit-details-marker {
+  display: none;
+}
+.project-study summary svg {
+  transition: transform 0.25s;
+  color: #a8b88b;
+}
+.project-study[open] summary svg {
+  transform: rotate(45deg);
+}
+.project-study dl {
+  margin: 5px 0 18px;
+  display: grid;
+  gap: 13px;
+  animation: study-appear 0.25s both;
+}
+.project-study dt {
+  color: #a8b88b;
+  font-size: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.project-study dd {
+  color: #b8babf;
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+}
+@keyframes study-appear {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (max-width: 1100px) {
+  .hero h1.typing-heading {
+    font-size: 41px;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    max-height: none;
+  }
+  .hero h1.typing-heading {
+    font-size: clamp(35px, 6vw, 55px);
+  }
+}
+@media (max-width: 480px) {
+  .hero h1.typing-heading {
+    font-size: clamp(30px, 8.2vw, 39px);
+  }
+  .portfolio-stats {
+    gap: 30px;
+  }
+  .portfolio-stats strong {
+    font-size: 34px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-study dl {
+    animation: none;
+  }
+}
+.hero h1.typing-heading {
+  position: relative;
+}
+.heading-reserve {
+  display: block;
+  visibility: hidden;
+}
+.heading-output {
+  position: absolute;
+  inset: 0;
+}
+.hero h1.typing-heading .typing-text {
+  position: static;
+}
+.hero h1.typing-heading .typing-primary {
+  color: #eeece6;
+}
+.hero h1.typing-heading .typing-accent {
+  color: #a8b88b;
+}
+.heading-output.is-typing .typing-text:last-child::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0.8em;
+  border-left: 2px solid #a8b88b;
+  margin-left: 3px;
+  vertical-align: -0.02em;
+  animation: caret-pulse 0.85s steps(1) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .heading-output.is-typing .typing-text:last-child::after {
+    display: none;
+  }
+}
