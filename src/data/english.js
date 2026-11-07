@@ -11,7 +11,7 @@ export const english = {
   'Quero conhecer pessoas, trocar experiências e participar de iniciativas em que possa aprender e contribuir. Tenho interesse em diferentes áreas da tecnologia e estou aberto a novas possibilidades.':
     'I want to meet people, exchange experiences, and take part in initiatives where I can learn and contribute. I’m interested in different areas of technology and open to new possibilities.',
   'Tecnologias em aprendizado': 'Technologies I’m learning',
-  'Tecnologias gerais': 'General technologies',
+  'Tecnologias essenciais': 'Essential technologies',
   'Estudos em desenvolvimento full-stack': 'Studying full-stack development',
   Fundamentos: 'Fundamentals',
   'Desenvolvimento web': 'Web development',
