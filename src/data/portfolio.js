@@ -48,7 +48,7 @@ export const skills = [
   },
   {
     id: 'gerais',
-    title: 'Tecnologias gerais',
+    title: 'Tecnologias essenciais',
     items: ['SQL', 'Git'],
   },
 ];
