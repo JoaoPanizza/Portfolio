@@ -54,10 +54,9 @@ export default function ContactSection() {
             <a
               className="button button-quiet"
               href={profile.resumeUrl}
-              target="_blank"
-              rel="noreferrer"
+              download
             >
-              {t('Ver currículo', 'View résumé')} <ArrowUpRight size={16} />
+              {t('Baixar currículo', 'Download résumé')} <ArrowUpRight size={16} />
             </a>
           )}
         </ScrollReveal>

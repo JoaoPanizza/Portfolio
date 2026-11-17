@@ -43,11 +43,10 @@ export default function HeroSection() {
             <a
               className="button button-quiet"
               href={profile.resumeUrl || '#trajetoria'}
-              target={profile.resumeUrl ? '_blank' : undefined}
-              rel={profile.resumeUrl ? 'noreferrer' : undefined}
+              download={profile.resumeUrl ? true : undefined}
             >
               {profile.resumeUrl
-                ? t('Ver currículo', 'View résumé')
+                ? t('Baixar currículo', 'Download résumé')
                 : t('Conheça minha trajetória', 'Explore my journey')}{' '}
               <ArrowRight size={17} />
             </a>

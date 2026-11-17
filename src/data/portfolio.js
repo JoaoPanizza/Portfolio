@@ -7,7 +7,7 @@ export const profile = {
   availability: 'Aberto a conexões e colaboração',
   focus: 'Estudos em desenvolvimento full-stack',
   goal: 'Aprendizado e colaboração',
-  resumeUrl: null,
+  resumeUrl: import.meta.env.BASE_URL + 'curriculo-joao-panizza.pdf',
   headline: ['Aprender, construir.', 'Evoluir em equipe.'],
   introduction:
     'Sou João Panizza, estudante de tecnologia. Estou estudando para me tornar um desenvolvedor full-stack e comecei meu aprendizado pelo desenvolvimento web.',
